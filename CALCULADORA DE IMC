@@ -1,0 +1,21 @@
+print("Seja bem vindo a calculadora de IMC!")
+nome = str(input('Qual seu nome? '))
+print('Ola {}!'.format(nome))
+peso = float(input('INSIRA AQUI SEU PESO EM (Kg):  '))
+altura = float(input('INSIRA AQUI SUA ALTURA EM (m): '))
+imc = peso /altura**2
+print('O calculo do seu IMC é  {} / {:.2f}² = {:.2f}'.format(peso,altura,imc)) 
+if imc<17.00:
+    print('Você está Muito abaixo do peso!')
+elif imc<18.49:
+    print('Você está abaixo do peso')
+elif imc<24.99:
+    print('Você está no peso normal')
+elif imc<29.99:
+    print('Você está acima do peso')
+elif imc<34.99:
+    print('Você apresenta um quadro de Obesidade I')
+elif imc<39.99:
+    print('Você apresenta um quadro deObesidade II (severa)')
+elif imc>40:
+    print('Você apresenta um quadro de Obesidade III (mórbida)')
